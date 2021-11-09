@@ -1,1 +1,91 @@
 # FAQ-card
+
+
+#### What i need to know before starting...
+
+*****************RESPONSIVE IMAGES*************************************
+
+<picture> element to define different pictures for different window sizes, EXAMPLE:
+
+```html
+	 <picture>
+  		<source srcset="img_smallflower.jpg" media="(max-width: 600px)">
+  		<source srcset="img_flowers.jpg" media="(max-width: 1500px)">
+  		<source srcset="flowers.jpg">
+  		<img src="img_smallflower.jpg" alt="Flowers">
+	</picture> 
+
+```
+
+**************************************************************************
+
+*********************RESPONSIVE TEXT SIZES*********************************
+
+text sizes can be set with `vw` which means viewport width.
+1vw === 1% f the viewport width
+
+**************************************************************************
+
+*********************MEDIA QUERIES***************************************
+
+The @media rule is used in media queries to apply different styles for different media types/devices.
+
+```CSS
+
+@media not|only mediatype and (mediafeature and|or|not mediafeature) {
+  CSS-Code;
+}
+
+```
+
+**************************************************************************
+
+
+******************GRID VIEW***********************************************
+
+many web page use responsive grid views, which means the page is devided into columns. grid view makes inserting elements very easy in fact a webpage with frid view consists of  12 columns and total width of 
+100% in order to make a page with responsive grid view you have to set `box-sizing` of all elements in the page to `border-box` to make padding and border include in total width and height,
+
+each column in grid view must have 8.33% width(of the viewport) and must have class `col-`. EXAMPLE BELOW:
+
+```CSS
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+```
+
+all these columns must float to the left so :
+
+```CSS
+
+	[class*="col-"] {
+  	float: left;
+  	padding: 15px;
+  	border: 1px solid red;
+	}
+
+```
+
+each row should be wrapped in a `<div class="row></div>` and the number of columns in a row should always add up to 12.
+
+then we should clear the flow after rows.EXAMPLE:
+
+```CSS	
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+```
+
