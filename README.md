@@ -89,3 +89,5 @@ then we should clear the flow after rows.EXAMPLE:
 
 ```
 
+Given that we have this ability to position create lines from named areas and areas from named lines it is worth taking a little bit of time to plan your naming strategy when 
+starting out creating your grid layout.  By selecting names that will make sense to you and your team you will help everyone to use the layouts you create more easily.
