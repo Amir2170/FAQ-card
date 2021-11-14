@@ -101,7 +101,7 @@ using 'object-fit: cover' i can crop exessive parts of an image and fit it to it
 
 in order for my images to fit into thier grid areas and crop exessive parts :
 
-````HTML 
+````CSS
 
 .bg-pattern img {
     max-width: 100%;
@@ -110,4 +110,21 @@ in order for my images to fit into thier grid areas and crop exessive parts :
 }
 
 ```` 
+
+i can use :
+
+```CSS 
+transform: translate(x, y);
+```
+
+to move elements right, left, up and down according to their position.
+
+
+i can use :
+
+```CSS
+transform: scale()
+```
+
+in order to change scale of an element.
 
