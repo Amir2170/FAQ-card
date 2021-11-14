@@ -10,7 +10,6 @@
     width: 100vw;
     height: 100vh;
     display: grid;
-    position: relative;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(11, 1fr);
     background: linear-gradient( to top, hsl(240, 73%, 65%), hsl(273, 75%, 66%));
@@ -27,38 +26,35 @@
 }
 
 .illustration-woman {
-    position: absolute;
-    max-width: 400px;
     grid-row-start: 4;
     grid-row-end: 9;
     grid-column-start: 3;
-    grid-column-end: 7;
+    grid-column-end: 6;
     z-index: 10;
-    top: -20px;
-    left: -50px;
+    overflow: hidden;
 }
 
 .illustration-woman img {
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
+    transform: translateX(-5vw);
 }
 
 .bg-pattern {
-    position: absolute;
-    max-width: 600px;
-    grid-row-start: 1;
-    grid-row-end: 8;
-    grid-column-start: 2;
-    grid-column-end: 7;
-    left: -100px;
+    grid-row-start: 3;
+    grid-row-end: 10;
+    grid-column-start: 3;
+    grid-column-end: 6;
     z-index: 5;
+    overflow: hidden;
 }
 
 .bg-pattern img {
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
+    transform: translate(-19vw, -8vh) scale(2);
 }
 
 

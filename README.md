@@ -91,3 +91,23 @@ then we should clear the flow after rows.EXAMPLE:
 
 Given that we have this ability to position create lines from named areas and areas from named lines it is worth taking a little bit of time to plan your naming strategy when 
 starting out creating your grid layout.  By selecting names that will make sense to you and your team you will help everyone to use the layouts you create more easily.
+
+
+WAHT I LEARNT DURING THIS PROJECT  *********************
+
+it's better to put <picture> and <img> tags inside a <div> if i want to use grid layout.
+
+using 'object-fit: cover' i can crop exessive parts of an image and fit it to it's container.
+
+in order for my images to fit into thier grid areas and crop exessive parts :
+
+````HTML 
+
+.bg-pattern img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+```` 
+
