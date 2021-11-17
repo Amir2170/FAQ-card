@@ -145,5 +145,8 @@ to appropriate size using CSS 'transform: scale()'.
 
 ** if user clicks on the question itself instead of arrow it is still possible to see the asnwer and the arrow will rotate as well.
 
+**this website is responsive for both mobile and desktop i tried to design it in a way so that if users change their viewport 
+width or height still have the same experience as much as possible(i tried my best!!!!).
+
 
 **************************written by AMIR2170*************************
