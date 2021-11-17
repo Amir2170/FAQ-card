@@ -3,15 +3,27 @@ let faq = document.querySelector('.faq');
 faq.addEventListener('click', function(event) {
     let target = event.target;
 
-    if(target.tagName != 'IMG') return;
+    if(!target.classList.contains('question')) {
+        if(target.tagName != 'IMG'){
+            return;
+        }
+    }
 
-    target.classList.toggle('rotate');
+    let question, answer, arrow;
 
-    let question = target.parentElement.parentElement;
+    if(target.tagName == 'IMG') {
+        arrow = target;
+        question = target.parentElement.parentElement;
+        answer = target.parentElement.parentElement.nextElementSibling;
+    } else {
+        question = target;
+        answer = target.nextElementSibling;
+        arrow = target.querySelector('span > img');
+    }
+
+    arrow.classList.toggle('rotate');
 
     question.classList.toggle('question-clicked');
 
-    let answer = target.parentElement.parentElement.nextElementSibling;
-
     answer.hidden = !(answer.hidden);
-})
+});
