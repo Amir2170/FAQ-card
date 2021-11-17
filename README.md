@@ -141,7 +141,7 @@ if an element passes first one(meaning it is not the question) it have to pass t
 **i first tried to position illustrations using a combination of grid layout( for the whole document) and fixed positionings(for illustrations) 
 but i wasn't able to do that because it would be very complicated. (not in a good way!!!)
 instead what i did was i positioned elements using line placements of grid layout and then positioned them using CSS `transform: translate()` and scaled them
-to appropriate size using CSS 'transform: scale()'.
+to appropriate size using CSS `transform: scale()`.
 
 ** if user clicks on the question itself instead of arrow it is still possible to see the asnwer and the arrow will rotate as well.
 
